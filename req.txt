@@ -1,0 +1,19 @@
+total books (.txt file)
+input
+    display books
+        -display a txt file
+
+    issue books
+    return books
+    get date and time
+    if return after 7 days throw message for fine
+    add a book
+    delete a book
+    update a book
+
+
+
+#have to define the variable properly
+facing issue while issuing last book
+need to check the logic when making a list as after issuing the indexing gets disturbed
+    
