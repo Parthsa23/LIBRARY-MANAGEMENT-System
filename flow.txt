@@ -1,0 +1,22 @@
+Library
+    enter pin
+    # Connecting to the server
+
+menu
+    will help to select the available details
+    the details are as follows:-
+        display book
+        issue book
+        return a book
+        add book
+        remove a Book
+        update a book
+        create a user (this is for now a exception)
+
+Display
+Issue
+Return
+AddBook
+Remove
+Update
+Date

@@ -13,7 +13,17 @@ input
 
 
 
-#have to define the variable properly
-facing issue while issuing last book
-need to check the logic when making a list as after issuing the indexing gets disturbed
+#have to define the variable properly ------In Progress
+facing issue while issuing last book --------Done
+need to check the logic when making a list as after issuing the indexing gets disturbed ------------Done
+Issue with printing only date and time seperately will check later  ----------Have to check
+
+
+
+Issues resolved
+
+ book issuing easily 
+ able to display book
+ able to add Book have to enter the pin before adding the book
+
     
