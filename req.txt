@@ -3,27 +3,24 @@ input
     display books
         -display a txt file
 
-    issue books
+    issue books(done)
     return books
-    get date and time
-    if return after 7 days throw message for fine
-    add a book
-    delete a book
-    update a book
+    get date and time (done) ---------but not getting seperately
+    if return after 7 days throw message for fine (not done)
+    add a book (done)
+    delete a book (done)
+    update a book (done)
 
 
+issues
 
-#have to define the variable properly ------In Progress
-facing issue while issuing last book --------Done
 need to check the logic when making a list as after issuing the indexing gets disturbed ------------Done
-Issue with printing only date and time seperately will check later  ----------Have to check
+Issue with printing only date and time seperatelly will check later  ----------Have to check
+issue with return,
+                1. pin entering 2 times
+                2. not asking the book name which was issued now to be return
+                3.  have to connect both return and issue book classes
 
 
-
-Issues resolved
-
- book issuing easily 
- able to display book
- able to add Book have to enter the pin before adding the book
 
     
