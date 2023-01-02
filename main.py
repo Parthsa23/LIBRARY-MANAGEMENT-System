@@ -12,7 +12,7 @@ class Library:
                                            host='127.0.0.1',
                                            database='LMS'
         )
-        # self.cnx.close()
+        self.cnx.close()
         self.books = ['Harry Potter', 'Honey Singh', 'Ajay Yadav', 'Parth Saraswat', 'RISHABH SHARMA', 'GAURAV RAY']
         self.Cpin = int(input("Confirm Pin :  "))
         self.book_issued = ""
@@ -41,7 +41,7 @@ class Display(Library):
 
         if self.pin == self.Cpin:
             print("The Available book are available below ")
-            # print(self.books)
+            print(self.books)
             print(self.cnx)
             # print(self.cnx('AUTHOR_NAME'))
         else:
@@ -147,8 +147,8 @@ class Update(Library):
 
 # canara = Display()
 # canara.display()
-hdfc = Return()
-hdfc.ret()
+# hdfc = Return()
+# hdfc.ret()
 # sbi = Issue()
 # sbi.issue()
 # axis = AddBook()

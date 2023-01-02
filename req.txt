@@ -1,12 +1,12 @@
-total books (.txt file)
+total books (.txt file) NOT DONE
 input
     display books
-        -display a txt file
+        -display a txt file ----------NOT DONE
 
     issue books(done)
-    return books
-    get date and time (done) ---------but not getting seperately
-    if return after 7 days throw message for fine (not done)
+    return books(DONE)
+    get date and time (done)
+    if return after 7 days throw message for fine ( done)
     add a book (done)
     delete a book (done)
     update a book (done)
@@ -15,11 +15,11 @@ input
 issues
 
 need to check the logic when making a list as after issuing the indexing gets disturbed ------------Done
-Issue with printing only date and time seperatelly will check later  ----------Have to check
+Issue with printing only date and time separately will check later  ----------DONE
 issue with return,
-                1. pin entering 2 times
-                2. not asking the book name which was issued now to be return
-                3.  have to connect both return and issue book classes
+                1. pin entering 2 times  --------------DONE
+                2. not asking the book name which was issued now to be return -------------DONE
+                3. have to connect both return and issue book classes--------------DONE
 
 
 
