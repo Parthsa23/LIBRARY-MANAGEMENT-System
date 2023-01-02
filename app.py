@@ -63,7 +63,7 @@ class AddBook(Library):
 
     def add(self):
         if self.pin == self.Cpin:
-            user_input = input("Add  the Book Details : - ")
+            user_input = input("Add  the Book Details : - ") # Entering the details of the user
             self.books.append(user_input)
             print(self.books)
         else:
