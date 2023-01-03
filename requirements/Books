@@ -1,0 +1,32 @@
+Books(class diagram)
+	connection - set up a database connection (db.cursor) --------- done with db.py folder
+	create --pymysql db  and create db command  -------------- done with db.py folder
+	insert - - pymysql db and insert the details ------- done with db.py folder
+	Read - pymysql db and read db command ---------- done with db.py folder
+	Update - pymysql db and update db command -------------
+	delete -  pymysql and delete db command ------------ 
+	books - will have book details ----- fields are ---
+	        book_name,-------------done with db.py folder
+			author_name,----------done with db.py folder done with db.py folder
+			quantity ------done with db.py folder
+
+User
+	name  --- input and save it in db
+	mobile_number  -  input and save it in db
+	roll number  - input and save it in db
+
+	issue_book() --- 
+	return_book() --- 
+	fetch return and issue date for late pay check
+	create a table stores 
+			issue date , 
+			return date ,  
+			user details ,
+			issued book details
+			boolean check for late pay
+
+
+Library
+	Add_Book()
+	Delete_Book()
+
