@@ -5,12 +5,38 @@ import mysql.connector
 class Database:
 
     def __init__(self):
-        self.mydb = mysql.connector.connect(
-            host="localhost",
-            user="root",
-            password="Password@123",
-            database="LMS"
-        )
+        #     self.mydb = mysql.connector.connect(
+        #         host="localhost",
+        #         user="root",
+        #         password="Password@123",
+        #         database="LMS"
+        #     )
+        self.menu()
+
+    def menu(self):
+        user_input = input('''
+                    Hello. How Would you like to proceed?
+                        1. Enter 1 to Create Database
+                        2. Enter 2 to Create Table BOOK
+                        3. Enter 3 to Create Table USER
+                        4. Enter 3 to Insert Entries
+                        5. Enter 4 to Display Table 
+                        6. Enter 5 to Exit 
+        ''')
+        # print(user_input)
+        if user_input == "1":
+            self.create_db()
+        elif user_input == "2":
+            self.create_table_book()
+        elif user_input == "3":
+            self.create_table_user()
+        elif user_input == "4":
+            self.insert_data()
+        elif user_input == "5":
+            self.display_table()
+        else:
+            self.menu()
+            # print("BYe")
 
     # CODE TO CREATE A NEW DB
     @staticmethod
@@ -25,11 +51,12 @@ class Database:
         mycursor = mydb.cursor()
 
         mycursor.execute("CREATE DATABASE LMS")
+        print('Database Created Successfully')
 
-    # COMMAND TO CREATE TABLE IN CREATED DB
+    # creating table for books
 
     @staticmethod
-    def create_table():
+    def create_table_book():
         mydb = mysql.connector.connect(
             host="localhost",
             user="root",
@@ -41,19 +68,41 @@ class Database:
         mycursor = mydb.cursor()
 
         mycursor.execute(
-            "CREATE TABLE BOOKS ( ID MEDIUMINT NOT NULL AUTO_INCREMENT ,BOOK_NAME VARCHAR(255), AUTHOR_NAME VARCHAR(255) , QUANTITY INTEGER(3),  PRIMARY KEY (ID))")
+            "CREATE TABLE BOOKS ( ID MEDIUMINT NOT NULL AUTO_INCREMENT ,BOOK_NAME VARCHAR(255), AUTHOR_NAME VARCHAR("
+            "255) , QUANTITY INTEGER(3),  PRIMARY KEY (ID))")
+        print("Table Created Successfully")
+
+    # Creating table User
+    @staticmethod
+    def create_table_user():
+        mydb = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            password="Password@123",
+            database="LMS"
+        )
+        print(mydb)
+
+        mycursor = mydb.cursor()
+
+        mycursor.execute(
+            'CREATE TABLE USER ( ID INT NOT NULL AUTO_INCREMENT ,USER_NAME VARCHAR(255) NULL, USER_MOBILE BIGINT  NULL,'
+            'USER_EMAIL VARCHAR(255) NULL, USER_ROLL_NO INT NULL, USER_CLASS INT NULL,USER_SECTION CHAR(2)  NULL, '
+            'BOOK_NAME VARCHAR(255)NULL ,AUTHOR_NAME VARCHAR(255)NULL , ISSUE_DATE datetime default now() NULL,'
+            'RETURN_DATE datetime default now() NULL,PRIMARY KEY(ID))')
+        print("Table Created Successfully")
 
     # command to insert a table
     @staticmethod
-    def insert_table():
+    def insert_data():
         mydb = mysql.connector.connect(
             host="localhost",
             user="root",
             password="Password@123",
             database="LMS")
         mycursor = mydb.cursor()
-
-        sql = "INSERT INTO BOOKS ( BOOK_NAME,AUTHOR_NAME,QUANTITY) VALUES ( %s,%s, %s)"
+        sql = "INSERT INTO BOOKS ( BOOK_NAME,AUTHOR_NAME,QUANTITY) \
+              VALUES ( ?,?,?)",
         val = [
             ('Peter', 'Low street ', 4),
             ('Amy', 'Apple st ', 652),
@@ -67,23 +116,24 @@ class Database:
             ('Ben', 'Park Lane ', 38),
             ('William', 'Central st ', 954),
             ('Chuck', 'Main Road ', 989),
-            ('Viola', 'Sideways', 133)]
+            ('Viola', 'Sideways', 133)
+        ]
         mycursor.executemany(sql, val)
 
         print(mydb.commit())
 
-        print(mycursor.rowcount, "was inserted.")
+        print(mycursor, " entries are inserted.")
 
     @staticmethod
-    def display_table(self):
-        # mydb = mysql.connector.connect(
-        #     host="localhost",
-        #     user="root",
-        #     password="Password@123",
-        #     database="LMS"
-        # )
+    def display_table():
+        mydb = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            password="Password@123",
+            database="LMS"
+        )
 
-        mycursor = self.mydb.cursor()
+        mycursor = mydb.cursor()
 
         mycursor.execute("SELECT * FROM BOOKS")
 
@@ -94,7 +144,8 @@ class Database:
 
 
 sbi = Database()
+sbi.menu()
 # sbi.create_table()
-# # sbi.create_db()
-# sbi.insert_table()
-sbi.display_table()
+# sbi.create_db()
+# sbi.insert_data()
+# sbi.display_table()
