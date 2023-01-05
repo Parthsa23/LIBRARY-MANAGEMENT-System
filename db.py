@@ -88,8 +88,9 @@ class Database:
         mycursor.execute(
             'CREATE TABLE USER ( ID INT NOT NULL AUTO_INCREMENT ,USER_NAME VARCHAR(255) NULL, USER_MOBILE BIGINT  NULL,'
             'USER_EMAIL VARCHAR(255) NULL, USER_ROLL_NO INT NULL, USER_CLASS INT NULL,USER_SECTION CHAR(2)  NULL, '
-            'BOOK_NAME VARCHAR(255)NULL ,AUTHOR_NAME VARCHAR(255)NULL , ISSUE_DATE datetime default now() NULL,'
-            'RETURN_DATE datetime default now() NULL,PRIMARY KEY(ID))')
+            'BOOK_NAME VARCHAR(255)NULL ,AUTHOR_NAME VARCHAR(255)NULL ,BOOK_QUANTITY INT, ISSUE_DATE DATE  '
+            ' NULL,'
+            'RETURN_DATE DATE NULL,PRIMARY KEY(ID))')
         print("Table Created Successfully")
 
     # command to insert a table

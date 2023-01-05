@@ -1,0 +1,19 @@
+issue
+	user input
+		name  ----------DONE
+		class----------DONE
+		section ----------DONE
+		mobile number ----------DONE
+		roll no ----------DONE
+		email address ----------DONE
+	print books table ----------DONE
+	user input's the book sno  --------------DONE
+	user input the book quantity  --------------DONE
+	if condition for QUANTITY if stock <1
+		print ("out of stock")
+	elif:
+		store the book name and author name in a variable
+		and *****decrease the stock by user quantity of book*****
+		update the author name and book name  WITH QUANTITY OF BOOK ISSUED in user table
+		with issue date as well
+		print congrats your book issue
