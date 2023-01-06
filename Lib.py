@@ -17,6 +17,8 @@ class Library:
                         1. Enter 1 to Display Book
                         2. Enter 2 to Add Book
                         3. Enter 3 to Delete Data
+                        4. Enter 4 to Display User Log
+                        5. Enter 5 to Display User Late Payment Log
                         4. Enter 4 to Exit 
         ''')
         if user_input == "1":
@@ -25,6 +27,10 @@ class Library:
             self.Add_Book()
         elif user_input == "3":
             self.Delete_Book()
+        elif user_input == "4":
+            self.Display_User_LOG()
+        elif user_input == "5":
+            self.Display_User_TABLE_LATE_LOG()
         else:
             self.menu()
 
@@ -66,6 +72,27 @@ class Library:
 
         self.menu()
 
+    def Display_User_LOG(self):
+        print("displaying the USER LOG")
+        # mycursor = self.mydb.cursor()
+        self.mycursor.execute("SELECT * FROM USER")
+        myresult = self.mycursor.fetchall()
+
+        for x in myresult:
+            print(x)
+        # print(Display_data)
+        self.menu()
+
+    def Display_User_TABLE_LATE_LOG(self):
+        print("displaying the USER LATE LOG")
+        # mycursor = self.mydb.cursor()
+        self.mycursor.execute("SELECT * FROM LATE")
+        myresult = self.mycursor.fetchall()
+
+        for x in myresult:
+            print(x)
+        # print(Display_data)
+        self.menu()
 
 a = Library()
 a.menu()

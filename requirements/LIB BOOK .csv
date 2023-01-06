@@ -1,0 +1,501 @@
+BOOK_NAME,AUTHOR_NAME,QUANTITY
+Don Quixote,Miguel de Cervantes,143
+Alice's Adventures in Wonderland,Lewis Carroll,58
+The Adventures of Huckleberry Finn,Mark Twain,160
+The Adventures of Tom Sawyer,Mark Twain,177
+Treasure Island,Robert Louis Stevenson,159
+Pride and Prejudice,Jane Austen,84
+Wuthering Heights,Emily Brontë,19
+Jane Eyre,Charlotte Brontë,206
+Moby Dick,Herman Melville,192
+The Scarlet Letter,Nathaniel Hawthorne,77
+Gulliver's Travels,Jonathan Swift,180
+The Pilgrim's Progress,John Bunyan,61
+A Christmas Carol,Charles Dickens,80
+David Copperfield,Charles Dickens,162
+A Tale of Two Cities,Charles Dickens,190
+Little Women,Louisa May Alcott,7
+Great Expectations,Charles Dickens,187
+"The Hobbit, or, There and Back Again",J.R.R. Tolkien,105
+"Frankenstein, or, the Modern Prometheus",Mary Shelley,187
+Oliver Twist,Charles Dickens,88
+Uncle Tom's Cabin,Harriet Beecher Stowe,53
+Crime and Punishment,Fyodor Dostoyevsky,30
+Madame Bovary: Patterns of Provincial life,Gustave Flaubert,85
+The Return of the King,J.R.R. Tolkien,4
+Dracula,Bram Stoker,198
+The Three Musketeers,Alexandre Dumas,70
+Brave New World,Aldous Huxley,172
+War and Peace,Leo Tolstoy,83
+To Kill a Mockingbird,Harper Lee,44
+The Wizard of Oz,L. Frank Baum,189
+Les Misérables,Victor Hugo,40
+The Secret Garden,Frances Hodgson Burnett,203
+Animal Farm,George Orwell,33
+The Great Gatsby,F. Scott Fitzgerald,73
+The Little Prince,Antoine de Saint-Exupéry,50
+The Call of the Wild,Jack London,130
+"20,000 Leagues Under the Sea",Jules Verne,138
+Anna Karenina,Leo Tolstoy,162
+The Wind in the Willows,Kenneth Grahame,183
+The Picture of Dorian Gray,Oscar Wilde,202
+The Grapes of Wrath,John Steinbeck,102
+Sense and Sensibility,Jane Austen,108
+The Last of the Mohicans,James Fenimore Cooper,184
+Tess of the d'Urbervilles,Thomas Hardy,44
+Harry Potter and the Sorcerer's Stone,J.K. Rowling,170
+Heidi,Johanna Spyri,183
+Ulysses,James Joyce,12
+The Complete Sherlock Holmes,Arthur Conan Doyle,99
+The Count of Monte Cristo,Alexandre Dumas,60
+The Old Man and the Sea,Ernest Hemingway,172
+"The Lion, the Witch, and the Wardrobe",C.S. Lewis,156
+The Hunchback of Notre Dame,Victor Hugo,60
+Pinocchio,Carlo Collodi,137
+One Hundred Years of Solitude,Gabriel García Márquez,6
+Ivanhoe,Walter Scott,20
+The Red Badge of Courage,Stephen Crane,218
+Anne of Green Gables,L.M. Montgomery,169
+Black Beauty,Anna Sewell,116
+Peter Pan,J.M. Barrie,75
+A Farewell to Arms,Ernest Hemingway,42
+The House of the Seven Gables,Nathaniel Hawthorne,122
+Lord of the Flies,William Golding,31
+The Prince and the Pauper,Mark Twain,139
+A Portrait of the Artist as a Young Man,James Joyce,130
+Lord Jim,Joseph Conrad,118
+Harry Potter and the Chamber of Secrets,J.K. Rowling,128
+The Red & the Black,Stendhal,197
+The Stranger,Albert Camus,167
+The Trial,Franz Kafka,211
+Lady Chatterley's Lover,D.H. Lawrence,175
+Kidnapped: The Adventures of David Balfour,Robert Louis Stevenson,178
+The Catcher in the Rye,J.D. Salinger,189
+Fahrenheit 451,Ray Bradbury,68
+A Journey to the Center of the Earth,Jules Verne,52
+Vanity Fair,William Makepeace Thackeray,167
+All Quiet on the Western Front,Erich Maria Remarque,30
+Gone with the Wind,Margaret Mitchell,157
+My Ántonia,Willa Cather,120
+Of Mice and Men,John Steinbeck,156
+The Vicar of Wakefield,Oliver Goldsmith,33
+A Connecticut Yankee in King Arthur's Court,Mark Twain,203
+White Fang,Jack London,164
+Fathers and Sons,Ivan Sergeevich Turgenev,54
+Doctor Zhivago,Boris Leonidovich Pasternak,148
+The Decameron,Giovanni Boccaccio,191
+Nineteen Eighty-Four,George Orwell,147
+The Jungle,Upton Sinclair,178
+The Da Vinci Code,Dan Brown,168
+Persuasion,Jane Austen,185
+Mansfield Park,Jane Austen,213
+Candide,Voltaire,209
+For Whom the Bell Tolls,Ernest Hemingway,131
+Far from the Madding Crowd,Thomas Hardy,10
+The Fellowship of the Ring,J.R.R. Tolkien,210
+The Return of the Native,Thomas Hardy,144
+Sons and Lovers,D.H. Lawrence,171
+Charlotte's Web,E.B. White,151
+The Swiss Family Robinson,Johann David Wyss,69
+Bleak House,Charles Dickens,146
+Père Goriot,Honoré de Balzac,93
+Utopia,Thomas More,7
+"The History of Tom Jones, a Foundling",Henry Fielding,58
+Harry Potter and the Prisoner of Azkaban,J.K. Rowling,216
+Kim,Rudyard Kipling,98
+The Sound and the Fury,William Faulkner,180
+Harry Potter and the Goblet of Fire,J.K. Rowling,179
+The Mill on the Floss,George Eliot,31
+A Wrinkle in Time,Madeleine L'Engle,218
+The Hound of the Baskervilles,Arthur Conan Doyle,121
+The Two Towers,J.R.R. Tolkien,165
+The War of the Worlds,H.G. Wells,152
+Middlemarch,George Eliot,174
+The Age of Innocence,Edith Wharton,143
+The Color Purple,Alice Walker,21
+Northanger Abbey,Jane Austen,185
+East of Eden,John Steinbeck,114
+On the Road,Jack Kerouac,187
+Catch-22,Joseph Heller,94
+Around the World in Eighty Days,Jules Verne,15
+Hard Times,Charles Dickens,27
+Beloved,Toni Morrison,138
+Mrs. Dalloway,Virginia Woolf,79
+To the Lighthouse,Virginia Woolf,214
+The Magician's Nephew,C.S. Lewis,205
+Harry Potter and the Order of the Phoenix,J.K. Rowling,146
+The Sun Also Rises,Ernest Hemingway,156
+The Good Earth,Pearl S. Buck,41
+Silas Marner,George Eliot,17
+Love in the Time of Cholera,Gabriel García Márquez,10
+Rebecca,Daphne Du Maurier,103
+Jude the Obscure,Thomas Hardy,77
+Twilight,Stephenie Meyer,165
+A Passage to India,E.M. Forster,99
+The Plague,Albert Camus,92
+Nicholas Nickleby,Charles Dickens,205
+The Pearl,John Steinbeck,137
+Ethan Frome,Edith Wharton,88
+The Tale of Genji,Murasaki Shikibu,200
+The Giver,Lois Lowry,36
+The Alchemist,Paulo Coelho,11
+The Strange Case of Dr. Jekyll and Mr. Hyde,Robert Louis Stevenson,122
+Robinson Crusoe,Daniel Defoe,16
+Tender is the Night,F. Scott Fitzgerald,94
+The Idiot,Fyodor Dostoyevsky,101
+Hatchet,Gary Paulsen,191
+The Kite Runner,Khaled Hosseini,99
+One Flew Over the Cuckoo's Nest,Ken Kesey,9
+The Portrait of a Lady,Henry James,173
+The Outsiders,S.E. Hinton,35
+Ben-Hur,Lew Wallace,70
+The Mayor of Casterbridge,Thomas Hardy,127
+"Cry, The Beloved Country",Alan Paton,23
+The Last Battle,C.S. Lewis,123
+Captains Courageous,Rudyard Kipling,77
+The Castle,Franz Kafka,168
+The Metamorphosis,Franz Kafka,51
+The Magic Mountain (Der Zauberberg),Thomas Mann,81
+James and the Giant Peach,Roald Dahl,153
+The Horse and His Boy,C.S. Lewis,41
+Angels & Demons,Dan Brown,122
+The Voyage of the Dawn Treader,C.S. Lewis,153
+The Bell Jar,Sylvia Plath,139
+Women in Love,D.H. Lawrence,186
+The Yearling,Marjorie Kinnan Rawlings,85
+O Pioneers!,Willa Cather,143
+The Handmaid's Tale,Margaret Atwood,21
+The Moonstone,Wilkie Collins,106
+The Old Curiosity Shop,Charles Dickens,204
+Little Dorrit,Charles Dickens,159
+Prince Caspian: The Return to Narnia,C.S. Lewis,133
+Sister Carrie,Theodore Dreiser,3
+The Silver Chair,C.S. Lewis,159
+The Hunger Games,Suzanne Collins,75
+This Side of Paradise,F. Scott Fitzgerald,216
+Eugénie Grandet,Honoré de Balzac,150
+Of Human Bondage,W. Somerset Maugham,15
+Dream of the Red Chamber,Cao Xueqin,95
+Life of Pi,Yann Martel,84
+Harry Potter and the Deathly Hallows,J.K. Rowling,157
+Invisible Man,Ralph Ellison,132
+Steppenwolf,Hermann Hesse,66
+The Sorrows of Young Werther,Johann Wolfgang von Goethe,162
+Bridge to Terabithia,Katherine Paterson,120
+The Invisible Man,H.G. Wells,131
+Holes,Louis Sachar,137
+Siddhartha,Hermann Hesse,204
+A Tree Grows in Brooklyn,Betty Smith,81
+"Through the Looking-Glass, and What Alice Found There",Lewis Carroll,27
+In Cold Blood,Truman Capote,82
+The House of the Spirits,Isabel Allende,195
+Adam Bede,George Eliot,127
+The Betrothed,Alessandro Manzoni,86
+The Book Thief,Markus Zusak,94
+Their Eyes Were Watching God,Zora Neale Hurston,169
+One Day in the Life of Ivan Denisovich,Aleksandr Isaevich Solzhenitsyn,182
+The Sea Wolf,Jack London,164
+Catching Fire,Suzanne Collins,169
+"Roll of Thunder, Hear My Cry",Mildred D. Taylor,150
+Death Comes for the Archbishop,Willa Cather,22
+The House of Mirth,Edith Wharton,41
+Light in August,William Faulkner,70
+The Pickwick Papers,Charles Dickens,63
+Remembrance of Things Past,Marcel Proust,186
+Barchester Towers and the Warden,Anthony Trollope,30
+The Bridge of San Luis Rey,Thornton Wilder,46
+The Help,Kathryn Stockett,9
+Murder on the Orient Express,Agatha Christie,34
+The Lovely Bones,Alice Sebold,30
+The Appeal,John Grisham,207
+Dombey And Son,Charles Dickens,62
+Slaughterhouse-Five,Kurt Vonnegut,192
+An American Tragedy,Theodore Dreiser,183
+The Bluest Eye,Toni Morrison,128
+Little House In the Big Woods,Laura Ingalls Wilder,185
+Pippi Longstocking,Astrid Lindgren,59
+Germinal,Émile Zola,96
+The Heart Is a Lonely Hunter,Carson McCullers,109
+The Woman In White,Wilkie Collins,54
+"Absalom, Absalom!",William Faulkner,82
+A Painted House,John Grisham,120
+The Girl With the Dragon Tattoo,Stieg Larsson,176
+A Room With a View,E.M. Forster,176
+Watership Down,Richard Adams,198
+Memoirs of a Geisha,Arthur Golden,118
+Our Mutual Friend,Charles Dickens,137
+Babbitt,Sinclair Lewis,165
+The Red Pony,John Steinbeck,81
+All the King's Men,Robert Penn Warren,63
+Things Fall Apart,Chinua Achebe,42
+Lorna Doone,R.D. Blackmore,94
+Johnny Tremain,Esther Forbes,120
+Anne of Avonlea,L.M. Montgomery,29
+Tuck Everlasting,Natalie Babbitt,44
+The BFG,Roald Dahl,153
+Cannery Row,John Steinbeck,79
+The Joy Luck Club,Amy Tan,198
+The Silmarillion,J.R.R. Tolkien,80
+Roots,Alex Haley,101
+Little House on the Prairie,Laura Ingalls Wilder,135
+Native Son,Richard Wright,104
+Stuart Little,E.B. White,128
+Cross Fire,James Patterson,33
+The Power and the Glory,Graham Greene,104
+A Clockwork Orange,Anthony Burgess,169
+The Phantom of the Opera,Gaston Leroux,201
+The Martian Chronicles,Ray Bradbury,100
+The Road,Cormac McCarthy,106
+The Way of All Flesh,Samuel Butler,162
+Diary of a Wimpy Kid: The Long Haul,Jeff Kinney,41
+Villette,Charlotte Brontë,27
+The Curious Incident of the Dog In the Night-Time,Mark Haddon,186
+The Mysterious Island,Jules Verne,22
+Song of Solomon,Toni Morrison,196
+Nana,Émile Zola,176
+Quo Vadis,Henryk Sienkiewicz,122
+Main Street,Sinclair Lewis,92
+Matilda,Roald Dahl,45
+Lolita,Vladimir Vladimirovich Nabokov,77
+Paper Towns,John Green,203
+Sounder,William H. Armstrong,192
+"Are You There God? It's Me, Margaret",Judy Blume,56
+The Notebook,Nicholas Sparks,211
+From the Mixed-Up Files of Mrs. Basil E. Frankweiler,E.L. Konigsburg,208
+Atlas Shrugged,Ayn Rand,217
+The Fountainhead,Ayn Rand,92
+Number the Stars,Lois Lowry,19
+The Firm,John Grisham,42
+Swann's Way,Marcel Proust,147
+Ender's Game,Orson Scott Card,169
+The Name of the Rose,Umberto Eco,193
+A Time to Kill,John Grisham,202
+Water for Elephants,Sara Gruen,16
+The Time Machine,H.G. Wells,44
+Eragon,Christopher Paolini,35
+The Hitchhiker's Guide to the Galaxy,Douglas Adams,162
+Buddenbrooks,Thomas Mann,160
+A Thousand Splendid Suns,Khaled Hosseini,112
+The Witch of Blackbird Pond,Elizabeth George Speare,149
+And Then There Were None,Agatha Christie,41
+A Separate Peace,John Knowles,19
+Breaking Dawn,Stephenie Meyer,110
+As I Lay Dying,William Faulkner,111
+The Girl Who Played With Fire,Stieg Larsson,190
+Where the Red Fern Grows,Wilson Rawls,19
+Le Morte D'Arthur,Thomas Malory,23
+Mockingjay,Suzanne Collins,204
+The Pillars of the Earth,Ken Follett,76
+Persian Letters,Montesquieu,70
+The Client,John Grisham,212
+Sula,Toni Morrison,43
+Tales of a Fourth Grade Nothing,Judy Blume,18
+The Merry Adventures of Robin Hood of Great Renown In Nottinghamshire,Howard Pyle,178
+Tortilla Flat,John Steinbeck,35
+"Look Homeward, Angel",Thomas Wolfe,26
+The Mystery of Edwin Drood,Charles Dickens,155
+Brideshead Revisited,Evelyn Waugh,161
+The Pelican Brief,John Grisham,100
+Atonement,Ian McEwan,118
+Washington Square,Henry James,115
+Like Water for Chocolate,Laura Esquivel,25
+The Golden Compass,Philip Pullman,212
+The Secret Life of Bees,Sue Monk Kidd,15
+The Fault In Our Stars,John Green,170
+Nostromo,Joseph Conrad,32
+Finnegans Wake,James Joyce,201
+The Brethren,John Grisham,215
+Coraline,Neil Gaiman,41
+Heart of Darkness,Joseph Conrad,19
+On the Banks of Plum Creek,Laura Ingalls Wilder,108
+Rebecca of Sunnybrook Farm,Kate Douglas Smith Wiggin,17
+The Ambassadors,Henry James,121
+The Secret Agent,Joseph Conrad,74
+The House on Mango Street,Sandra Cisneros,29
+Go Tell It on the Mountain,James Baldwin,48
+The Testament,John Grisham,94
+The Clan of the Cave Bear,Jean M. Auel,76
+Cranford,Elizabeth Cleghorn Gaskell,118
+Because of Winn-Dixie,Kate DiCamillo,122
+My Side of the Mountain,Jean Craighead George,77
+The Runaway Jury,John Grisham,106
+The Mouse and the Motorcycle,Beverly Cleary,164
+The Lost Symbol,Dan Brown,152
+The Forsyte Saga,John Galsworthy,78
+Gone Girl,Gillian Flynn,140
+The Lightning Thief,Rick Riordan,123
+The Last Days of Pompeii,Edward Bulwer Lytton,78
+The Reader,Bernhard Schlink,65
+Caddie Woodlawn,Carol Ryrie Brink,218
+The Tale of Despereaux,Kate DiCamillo,136
+The Girl Who Kicked the Hornet's Nest,Stieg Larsson,92
+Dear Mr. Henshaw,Beverly Cleary,27
+The Killer Angels,Michael Shaara,165
+Chronicle of a Death Foretold,Gabriel García Márquez,39
+The Five People You Meet In Heaven,Mitch Albom,177
+The Master and Margarita,Mikhail Bulgakov,40
+"Winesburg, Ohio",Sherwood Anderson,153
+"""P"" Is for Peril",Sue Grafton,78
+My Sister's Keeper,Jodi Picoult,57
+Barnaby Rudge,Charles Dickens,104
+Howards End,E.M. Forster,45
+The Broker,John Grisham,45
+The Camel Club,David Baldacci,66
+The Rainbow,D.H. Lawrence,68
+The Man In the Iron Mask,Alexandre Dumas,3
+Mary Poppins,P.L. Travers,14
+Artemis Fowl,Eoin Colfer,16
+Dear John,Nicholas Sparks,200
+Cold Mountain,Charles Frazier,75
+Flowers for Algernon,Daniel Keyes,41
+The Dark Is Rising,Susan Cooper,96
+Resurrection,Leo Tolstoy,36
+Fearless Fourteen,Janet Evanovich,52
+A Sentimental Journey Through France and Italy,Laurence Sterne,76
+The King of Torts,John Grisham,39
+The Graveyard Book,Neil Gaiman,138
+The Quiet American,Graham Greene,166
+The Chamber,John Grisham,164
+The English Patient,Michael Ondaatje,109
+Snow Falling on Cedars,David Guterson,46
+The Long Winter,Laura Ingalls Wilder,3
+"Sarah, Plain and Tall",Patricia MacLachlan,107
+Cross Country,James Patterson,124
+The Spy Who Came In from the Cold,John Le Carré,47
+A Game of Thrones,George R.R. Martin,39
+The Thorn Birds,Colleen McCullough,167
+Old Yeller,Fred Gipson,139
+"Ramona Quimby, Age 8",Beverly Cleary,114
+Death In Venice,Thomas Mann,162
+By the Shores of Silver Lake,Laura Ingalls Wilder,32
+Inferno,Dan Brown,27
+Schindler's List,Thomas Keneally,148
+Jonathan Livingston Seagull,Richard Bach,196
+The Stand,Stephen King,35
+The Last Juror,John Grisham,145
+Shiloh,Phyllis Reynolds Naylor,126
+Girl With a Pearl Earring,Tracy Chevalier,36
+The Murder of Roger Ackroyd,Agatha Christie,149
+It,Stephen King,22
+The Rainmaker,John Grisham,17
+The Poisonwood Bible,Barbara Kingsolver,175
+The Indian in the Cupboard,Lynne Reid Banks,36
+The Maltese Falcon,Dashiell Hammett,173
+The Warden,Anthony Trollope,45
+The Summons,John Grisham,199
+Encyclopedia Brown: Boy Detective,Donald J. Sobol,76
+The Time Traveler's Wife,Audrey Niffenegger,65
+The Incredible Journey,Sheila Burnford,50
+Daughter of Fortune,Isabel Allende,159
+Shirley,Charlotte Brontë,89
+"Bud, Not Buddy",Christopher Paul Curtis,42
+The Horse Whisperer,Nicholas Evans,68
+The Street Lawyer,John Grisham,38
+Nausea,Jean-Paul Sartre,10
+To Have and Have Not,Ernest Hemingway,148
+The Bridges of Madison County,Robert James Waller,136
+Anne of the Island,L.M. Montgomery,48
+The Winter of Our Discontent,John Steinbeck,61
+The Shining,Stephen King,200
+The Tenant of Wildfell Hall,Anne Brontë,172
+First Family,David Baldacci,29
+The Partner,John Grisham,22
+The Girl on the Train,Paula Hawkins,54
+The Black Arrow: A Tale of the Two Roses,Robert Louis Stevenson,55
+The Rise of Silas Lapham,William Dea Howells,212
+The Choice,Nicholas Sparks,17
+The Virginian: A Horseman of the Plains,Owen Wister,40
+A Walk to Remember,Nicholas Sparks,35
+The Maze Runner,James Dashner,193
+The Westing Game,Ellen Raskin,118
+Misty of Chincoteague,Marguerite Henry,168
+Diary of a Wimpy Kid: The Last Straw,Jeff Kinney,208
+King Solomon's Mines,H. Rider Haggard,22
+The Princess of Cleves,Madame de (Marie-Madeleine Pioche de La Vergne) La Fayett,96
+Jacob Have I Loved,Katherine Paterson,78
+Mrs. Frisby and the Rats of NIMH,Robert C. O'Brien,136
+Misery,Stephen King,26
+The Cider House Rules,John Irving,145
+King of the Wind,Marguerite Henry,210
+The Once and Future King,T. H. White,3
+The Witches,Roald Dahl,186
+The Subtle Knife,Philip Pullman,59
+When You Reach Me,Rebecca Stead,173
+Carrie,Stephen King,138
+The Moon and Sixpence,W. Somerset Maugham,13
+The Higher Power of Lucky,Susan Patron,52
+"Looking Backward, 2000-1887",Edward Bellamy,178
+The Wings of the Dove,Henry James,122
+The Summer of the Swans,Betsy Cromer Byars,19
+Dangerous Liaisons,Choderlos de Laclos,188
+Jurassic Park,Michael Crichton,128
+The Absolutely True Diary of a Part-time Indian,Sherman Alexie,202
+The Grey King,Susan Cooper,153
+The Leopard,Giuseppe Tomasi di Lampedusa,59
+The Mammoth Hunters,Jean M. Auel,78
+The Trumpet of the Swan,E.B. White,48
+The Lucky One,Nicholas Sparks,200
+These Happy Golden Years,Laura Ingalls Wilder,79
+Arrowsmith,Sinclair Lewis,93
+Julie of the Wolves,Jean Craighead George,44
+The Screwtape Letters,C.S. Lewis,67
+The Fall,Albert Camus,25
+The No. 1 Ladies' Detective Agency,Alexander McCall Smith,47
+Worst Case,James Patterson,13
+Lost Horizon,James Hilton,78
+The Gunslinger,Stephen King,173
+The Slave Dancer,Paula Fox,89
+Harry Potter and the Half-Blood Prince,J.K. Rowling,199
+Inkheart,Cornelia Funke,73
+Ramona and her Father,Beverly Cleary,88
+Inkspell,Cornelia Funke,105
+Ramona the Pest,Beverly Cleary,190
+Walk Two Moons,Sharon Creech,208
+Miss Peregrine's Home for Peculiar Children,Ransom Riggs,76
+The Chocolate War,Robert Cormier,155
+Sophie's Choice,William Styron,134
+Looking for Alaska,John Green,108
+Breakfast at Tiffany's,Truman Capote,40
+The Razor's Edge,W. Somerset Maugham,166
+Dreamcatcher,Stephen King,205
+Orlando,Virginia Woolf,189
+The Things they Carried,Tim O'Brien,153
+Little Town on the Prairie,Laura Ingalls Wilder,214
+Nights in Rodanthe,Nicholas Sparks,36
+The Amber Spyglass,Philip Pullman,157
+The Miraculous Journey of Edward Tulane,Kate DiCamillo,66
+Flatland,Edwin A. Abbott,204
+Diary of a Wimpy Kid,Jeff Kinney,46
+The Memory Keeper's Daughter,Kim Edwards,42
+The Wedding,Nicholas Sparks,169
+Fried Green Tomatoes at the Whistle-Stop Cafe,Fannie Flagg,53
+The Cricket in Times Square,George Selden,136
+The Phantom Tollbooth,Norton Juster,21
+Rob Roy,Walter Scott,70
+The Death of Ivan Ilych,Leo Tolstoy,192
+Alex Cross's Trial,James Patterson,217
+Kenilworth,Walter Scott,52
+The Life and Opinions of Tristram Shandy,Laurence Sterne,23
+The Remains of theDay,Kazuo Ishiguro,67
+"M.C. Higgins, The Great",Virginia Hamilton,71
+Call It Courage,Armstrong Sperry,66
+Go Set a Watchman,Harper Lee,80
+Bleachers,John Grisham,105
+Elijah of Buxton,Christopher Paul Curtis,64
+Swimsuit,James Patterson,149
+Cat's Cradle,Kurt Vonnegut,183
+The Caine Mutiny,Herman Wouk,105
+The Heart of the Matter,Graham Greene,87
+"Harriet, the Spy",Louise Fitzhugh,16
+Darkness at Noon,Arthur Koestler,217
+A Prayer for Owen Meany,John Irving,188
+The God of Small Things,Arundhati Roy,183
+The Associate,John Grisham,113
+The Shack,William P. Young,217
+The Naked and the Dead,Norman Mailer,195
+The Sea of Monsters,Rick Riordan,204
+Stranger in a Strange Land,Robert A. Heinlein,71
+Vision in White,Nora Roberts,51
+The Whipping Boy,Sid Fleischman,97
+Room,Emma Donoghue,38
+Deception Point,Dan Brown,116
