@@ -18,8 +18,7 @@ class Database:
                     Hello. How Would you like to proceed?
                         1. Enter 1 to Create Database
                         2. Enter 2 to Create Table BOOK
-                        3. Enter 3 to Create Table USER
-                        
+                        3. Enter 3 to Create Table USER                        
                         4. Enter 4 to Insert Entries
                         5. Enter 5 to Display Table 
                         6. Enter 6 to Exit 
@@ -43,8 +42,8 @@ class Database:
             # print("BYe")
 
     # CODE TO CREATE A NEW DB
-    @staticmethod
-    def create_db():
+
+    def create_db(self):
         mydb = mysql.connector.connect(
             host="localhost",
             user="root",
@@ -59,8 +58,7 @@ class Database:
 
     # creating table for books
 
-    @staticmethod
-    def create_table_book():
+    def create_table_book(self):
         mydb = mysql.connector.connect(
             host="localhost",
             user="root",
@@ -77,8 +75,8 @@ class Database:
         print("Table Created Successfully")
 
     # Creating table User
-    @staticmethod
-    def create_table_user():
+
+    def create_table_user(self):
         mydb = mysql.connector.connect(
             host="localhost",
             user="root",
@@ -90,16 +88,18 @@ class Database:
         mycursor = mydb.cursor()
 
         mycursor.execute(
-            'CREATE TABLE USER ( ID INT NOT NULL AUTO_INCREMENT ,USER_NAME VARCHAR(255) NULL, USER_MOBILE BIGINT  NULL,'
-            'USER_EMAIL VARCHAR(255) NULL, USER_ROLL_NO INT NULL, USER_CLASS INT NULL,USER_SECTION CHAR(2)  NULL, '
-            'BOOK_NAME VARCHAR(255)NULL ,AUTHOR_NAME VARCHAR(255)NULL ,BOOK_QUANTITY INT, ISSUE_DATE DATE  '
-            ' NULL,'
-            'RETURN_DATE DATE NULL, STATUS VARCHAR(45) DEFAULT(PENDING) PRIMARY KEY(ID))')
+            "CREATE TABLE `USERS` (`ID` INT NOT NULL AUTO_INCREMENT,`USER_NAME` VARCHAR(255) NULL,`USER_MOBILE` INT "
+            "NULL,"
+            "`USER_EMAIL` VARCHAR(255) NULL,`USER_ROLL_NO` INT NULL,`USER_CLASS` INT NULL,`"
+            "USER_SECTION` VARCHAR(45) NULL,BOOK_ID INT NULL,`BOOK_NAME` VARCHAR(255) NULL,`AUTHOR_NAME` VARCHAR(255) "
+            "NULL,"
+            "`BOOK_QUANTITY` INT NULL,`ISSUE_DATE` DATE NULL,`RETURN_DATE` DATE NULL DEFAULT NULL,"
+            "`IS_RETURNED` VARCHAR(45) NULL DEFAULT 'PENDING', PRIMARY KEY(`ID`));")
         print("Table Created Successfully")
 
-    # command to insert a table
-    @staticmethod
-    def create_table_late():
+        # command to insert a table
+
+    def create_table_late(self):
         mydb = mysql.connector.connect(
             host="localhost",
             user="root",
@@ -118,57 +118,52 @@ class Database:
 
         print("Table Created Successfully")
 
+    def insert_data(self):
+        mydb = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            password="Password@123",
+            database="LMS")
+        mycursor = mydb.cursor()
+        sql = "INSERT INTO BOOKS ( BOOK_NAME,AUTHOR_NAME,QUANTITY) \
+                  VALUES ( ?,?,?)",
+        val = [
+            ('Peter', 'Low street ', 4),
+            ('Amy', 'Apple st ', 652),
+            ('Hannah', 'Mountain ', 21),
+            ('Michael', 'Valley ', 345),
+            ('Sandy', 'Ocean blvd ', 2),
+            ('Betty', 'Green Grass ', 1),
+            ('Richard', 'Sky st ', 331),
+            ('Susan', 'One way ', 98),
+            ('Vicky', 'Yellow Garden ', 2),
+            ('Ben', 'Park Lane ', 38),
+            ('William', 'Central st ', 954),
+            ('Chuck', 'Main Road ', 989),
+            ('Viola', 'Sideways', 133)
+        ]
+        mycursor.executemany(sql, val)
 
+        print(mydb.commit())
 
+        print(mycursor, " entries are inserted.")
 
-def insert_data():
-    mydb = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="Password@123",
-        database="LMS")
-    mycursor = mydb.cursor()
-    sql = "INSERT INTO BOOKS ( BOOK_NAME,AUTHOR_NAME,QUANTITY) \
-              VALUES ( ?,?,?)",
-    val = [
-        ('Peter', 'Low street ', 4),
-        ('Amy', 'Apple st ', 652),
-        ('Hannah', 'Mountain ', 21),
-        ('Michael', 'Valley ', 345),
-        ('Sandy', 'Ocean blvd ', 2),
-        ('Betty', 'Green Grass ', 1),
-        ('Richard', 'Sky st ', 331),
-        ('Susan', 'One way ', 98),
-        ('Vicky', 'Yellow Garden ', 2),
-        ('Ben', 'Park Lane ', 38),
-        ('William', 'Central st ', 954),
-        ('Chuck', 'Main Road ', 989),
-        ('Viola', 'Sideways', 133)
-    ]
-    mycursor.executemany(sql, val)
+    def display_table(self):
+        mydb = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            password="Password@123",
+            database="LMS"
+        )
 
-    print(mydb.commit())
+        mycursor = mydb.cursor()
 
-    print(mycursor, " entries are inserted.")
+        mycursor.execute("SELECT * FROM BOOKS")
 
+        myresult = mycursor.fetchall()
 
-@staticmethod
-def display_table():
-    mydb = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="Password@123",
-        database="LMS"
-    )
-
-    mycursor = mydb.cursor()
-
-    mycursor.execute("SELECT * FROM BOOKS")
-
-    myresult = mycursor.fetchall()
-
-    for x in myresult:
-        print(x)
+        for x in myresult:
+            print(x)
 
 
 sbi = Database()

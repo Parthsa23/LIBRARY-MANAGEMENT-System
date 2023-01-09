@@ -39,7 +39,6 @@ class Library:
         # mycursor = self.mydb.cursor()
         self.mycursor.execute("SELECT * FROM BOOKS")
         myresult = self.mycursor.fetchall()
-
         for x in myresult:
             print(x)
         # print(Display_data)
