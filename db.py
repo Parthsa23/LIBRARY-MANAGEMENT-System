@@ -1,16 +1,16 @@
-# import pymysql
 import mysql.connector
 
 
 class Database:
 
     def __init__(self):
-        #     self.mydb = mysql.connector.connect(
-        #         host="localhost",
-        #         user="root",
-        #         password="Password@123",
-        #         database="LMS"
-        #     )
+        self.mydb = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            password="Password@123",
+            database="LMS"
+        )
+        self.mycursor = self.mydb.cursor()
         self.menu()
 
     def menu(self):
@@ -44,32 +44,13 @@ class Database:
     # CODE TO CREATE A NEW DB
 
     def create_db(self):
-        mydb = mysql.connector.connect(
-            host="localhost",
-            user="root",
-            password="Password@123",
-        )
-        print(mydb)
-
-        mycursor = mydb.cursor()
-
-        mycursor.execute("CREATE DATABASE LMS")
+        self.mycursor.execute("CREATE DATABASE LMS")
         print('Database Created Successfully')
 
     # creating table for books
 
     def create_table_book(self):
-        mydb = mysql.connector.connect(
-            host="localhost",
-            user="root",
-            password="Password@123",
-            database="LMS"
-        )
-        print(mydb)
-
-        mycursor = mydb.cursor()
-
-        mycursor.execute(
+        self.mycursor.execute(
             "CREATE TABLE BOOKS ( ID MEDIUMINT NOT NULL AUTO_INCREMENT ,BOOK_NAME VARCHAR(255), AUTHOR_NAME VARCHAR("
             "255) , QUANTITY INTEGER(3),  PRIMARY KEY (ID))")
         print("Table Created Successfully")
@@ -77,17 +58,7 @@ class Database:
     # Creating table User
 
     def create_table_user(self):
-        mydb = mysql.connector.connect(
-            host="localhost",
-            user="root",
-            password="Password@123",
-            database="LMS"
-        )
-        print(mydb)
-
-        mycursor = mydb.cursor()
-
-        mycursor.execute(
+        self.mycursor.execute(
             "CREATE TABLE `USERS` (`ID` INT NOT NULL AUTO_INCREMENT,`USER_NAME` VARCHAR(255) NULL,`USER_MOBILE` INT "
             "NULL,"
             "`USER_EMAIL` VARCHAR(255) NULL,`USER_ROLL_NO` INT NULL,`USER_CLASS` INT NULL,`"
@@ -100,68 +71,23 @@ class Database:
         # command to insert a table
 
     def create_table_late(self):
-        mydb = mysql.connector.connect(
-            host="localhost",
-            user="root",
-            password="Password@123",
-            database="LMS"
-        )
-        print(mydb)
 
-        mycursor = mydb.cursor()
-
-        mycursor.execute(
+        self.mycursor.execute(
             "CREATE TABLE LATE (`ID` INT NOT NULL AUTO_INCREMENT,`USER_NAME` VARCHAR(45) NULL DEFAULT NULL,"
             "`BOOK_NAME` VARCHAR(45) NULL DEFAULT NULL,`AUTHOR_NAME` VARCHAR(45) NULL DEFAULT NULL,"
             "`ISSUE_DATE` DATE NULL DEFAULT NULL,`RETURN_DATE` DATE NULL DEFAULT NULL,"
             "`date_difference` VARCHAR(45) NULL,PRIMARY KEY (ID))")
-
         print("Table Created Successfully")
-
     def insert_data(self):
-        mydb = mysql.connector.connect(
-            host="localhost",
-            user="root",
-            password="Password@123",
-            database="LMS")
-        mycursor = mydb.cursor()
-        sql = "INSERT INTO BOOKS ( BOOK_NAME,AUTHOR_NAME,QUANTITY) \
-                  VALUES ( ?,?,?)",
-        val = [
-            ('Peter', 'Low street ', 4),
-            ('Amy', 'Apple st ', 652),
-            ('Hannah', 'Mountain ', 21),
-            ('Michael', 'Valley ', 345),
-            ('Sandy', 'Ocean blvd ', 2),
-            ('Betty', 'Green Grass ', 1),
-            ('Richard', 'Sky st ', 331),
-            ('Susan', 'One way ', 98),
-            ('Vicky', 'Yellow Garden ', 2),
-            ('Ben', 'Park Lane ', 38),
-            ('William', 'Central st ', 954),
-            ('Chuck', 'Main Road ', 989),
-            ('Viola', 'Sideways', 133)
-        ]
-        mycursor.executemany(sql, val)
-
-        print(mydb.commit())
-
-        print(mycursor, " entries are inserted.")
+        sql = "INSERT INTO BOOKS ( BOOK_NAME,AUTHOR_NAME,QUANTITY) VALUES ( ?,?,?)",
+        val = [('Dummy', 'Dummy Data ', 1)]
+        self.mycursor.executemany(sql, val)
+        print(self.mydb.commit())
+        print(self.mycursor, " entries are inserted.")
 
     def display_table(self):
-        mydb = mysql.connector.connect(
-            host="localhost",
-            user="root",
-            password="Password@123",
-            database="LMS"
-        )
-
-        mycursor = mydb.cursor()
-
-        mycursor.execute("SELECT * FROM BOOKS")
-
-        myresult = mycursor.fetchall()
-
+        self.mycursor.execute("SELECT * FROM BOOKS")
+        myresult = self.mycursor.fetchall()
         for x in myresult:
             print(x)
 

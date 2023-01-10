@@ -2,7 +2,6 @@ import mysql.connector
 import datetime
 
 
-# import Lib
 class User:
     def __init__(self):
         self.display = None
@@ -54,13 +53,9 @@ class User:
     def Issue(self):
         user_input = input("enter (Y) IF YOU WANT TO ISSUE BOOK ELSE PRESS (ANY KEY) : ")
         if user_input == "Y" or user_input == "y":
-            # saving the personal details entered by user
-            # ----------------------------------
             # fetching current date to check the issue date for late payment check
             DATETIME = datetime.date.today()
-            # -----------------
             self.display_book_table()
-            # -----------------
             # printing the book details selected by user
             INPUT_BOOK_SNO = int(input("Enter the book S.no : "))
             try:
@@ -69,18 +64,12 @@ class User:
                 print(myresult)
             except Exception as e:
                 print(e)
-            # -----------------
             # input of how much quantity user want to issue
             INPUT_BOOK_QUANTITY = int(input("Enter the book Quantity you want to issued : "))
-            # ------------------------
-
-            # # -----------------------
-            # etching  book name and author name  from book table and storing it in a variable to post it in user table
+            # fetching  book name and author name  from book table and storing it in a variable to post it in user table
             try:
                 self.mycursor.execute("SELECT ID , BOOK_NAME,AUTHOR_NAME FROM BOOKS WHERE ID =%s", (INPUT_BOOK_SNO,))
                 string2 = list(self.mycursor.fetchall())
-                # print(string2)
-                # print(type(string2))
                 for y in string2:
                     print(y)
                 string3 = y[0]
@@ -94,15 +83,14 @@ class User:
             try:
                 sql = "INSERT INTO USER ( USER_NAME,USER_MOBILE,USER_EMAIL,USER_ROLL_NO,USER_CLASS,USER_SECTION," \
                       "BOOK_ID,BOOK_NAME,AUTHOR_NAME,BOOK_QUANTITY,ISSUE_DATE) VALUES(%s, %s, %s, %s, %s, %s, " \
-                      " %s,%s, %s,%s, %s)"  # ------------------- str
+                      " %s,%s, %s,%s, %s)"
                 val = (self.USER_NAME, self.USER_MOBILE,
                        self.USER_EMAIL, self.USER_ROLL_NO, self.USER_CLASS, self.USER_SECTION,
-                       string3, string4, string5, INPUT_BOOK_QUANTITY, DATETIME)  # ------------- list
+                       string3, string4, string5, INPUT_BOOK_QUANTITY, DATETIME)
                 self.mycursor.execute(sql, val)
                 print(self.mycursor.rowcount, " entry were inserted.")
             except Exception as e:
                 print(e)
-            # -----------------
             # updating the quantity in book table to maintain the stock by subtracting
             try:
                 sql = "UPDATE BOOKS SET QUANTITY = QUANTITY - %s  WHERE ID = %s"
@@ -117,7 +105,6 @@ class User:
         else:
             print("Thanks.  !!!!!!!!!!!")
         self.menu()
-
     def Return(self):
         user_input = input("enter (Y) IF YOU WANT TO return BOOK ELSE PRESS (ANY KEY) : ")
         if user_input == "Y" or user_input == "y":
@@ -194,24 +181,7 @@ class User:
                 print(e)
         else:
             print("Thanks")
-            # self.menu()
-
-        # ISSUE IS EK BOOK RETURN KAR RAHE H TOH DOOSRE KA BI SOTKC UTTA HI UPDATE HO RHA H
-
-    # def Penalty(self):
-    #     pass
-    #     # fetching some details and filling them in new table  late
-    #     try:
-    #         self.mycursor.execute("SELECT date_difference FROM LATE ")
-    #         myresult = self.mycursor.fetchall()
-    #         for str9 in myresult:
-    #             print(str9)
-    #
-    #
-    #
-    #     except Exception as e:
-    #         print("there is some error in code  kindly check before you go")
-    #         print(e)
+        self.menu()
 
 
 sbi = User()
