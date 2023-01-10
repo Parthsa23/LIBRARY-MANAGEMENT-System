@@ -12,12 +12,12 @@ class User:
             password="Password@123",
             database="LMS")
         self.mycursor = self.mydb.cursor()
-        self.USER_NAME = "PARTH "  # input("Enter Your Name : ")
-        self.USER_MOBILE = 7078440354  # int(input("Enter Your Mobile : "))
-        self.USER_EMAIL = "SARASWATPARTH55@GMAIL.COM"  # input("Enter Your Email :  ")
-        self.USER_ROLL_NO = 12  # int(input("Enter Your Roll Number  : "))
-        self.USER_CLASS = 12  # int(input("Enter Your Class  : "))
-        self.USER_SECTION = "C"  # input("Enter Your Section : ")
+        self.USER_NAME = input("Enter Your Name : ")
+        self.USER_MOBILE = int(input("Enter Your Mobile : "))
+        self.USER_EMAIL = input("Enter Your Email :  ")
+        self.USER_ROLL_NO = int(input("Enter Your Roll Number  : "))
+        self.USER_CLASS = int(input("Enter Your Class  : "))
+        self.USER_SECTION = input("Enter Your Section : ")
 
     def menu(self):
         user_input = input('''
@@ -174,7 +174,7 @@ class User:
             except Exception as e:
                 print("there is some error in code  kindly check before you go")
                 print(e)
-           # fetching the details from user table  and storing it in a variable
+            # fetching the details from user table  and storing it in a variable
             try:
                 self.mycursor.execute(
                     "SELECT ID,USER_NAME, BOOK_NAME, AUTHOR_NAME, ISSUE_DATE, RETURN_DATE, DATEDIFF(RETURN_DATE, "
@@ -186,8 +186,6 @@ class User:
                 sql = "Insert into LATE(USER_ID,USER_NAME, BOOK_NAME, AUTHOR_NAME, ISSUE_DATE, RETURN_DATE, " \
                       "date_difference)VALUES(%s, %s, %s, %s, %s, %s,%s)"
                 val = str9
-                print(sql)
-                print(val)
                 self.mycursor.execute(sql, val)
                 self.mydb.commit()
                 print(self.mycursor.rowcount, " entry were inserted.")
@@ -200,20 +198,20 @@ class User:
 
         # ISSUE IS EK BOOK RETURN KAR RAHE H TOH DOOSRE KA BI SOTKC UTTA HI UPDATE HO RHA H
 
-    def Penalty(self):
-        pass
-        # fetching some details and filling them in new table  late
-        try:
-            self.mycursor.execute("SELECT date_difference FROM LATE ")
-            myresult = self.mycursor.fetchall()
-            for str9 in myresult:
-                print(str9)
-
-
-
-        except Exception as e:
-            print("there is some error in code  kindly check before you go")
-            print(e)
+    # def Penalty(self):
+    #     pass
+    #     # fetching some details and filling them in new table  late
+    #     try:
+    #         self.mycursor.execute("SELECT date_difference FROM LATE ")
+    #         myresult = self.mycursor.fetchall()
+    #         for str9 in myresult:
+    #             print(str9)
+    #
+    #
+    #
+    #     except Exception as e:
+    #         print("there is some error in code  kindly check before you go")
+    #         print(e)
 
 
 sbi = User()

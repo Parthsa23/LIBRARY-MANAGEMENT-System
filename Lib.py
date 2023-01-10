@@ -19,7 +19,7 @@ class Library:
                         3. Enter 3 to Delete Data
                         4. Enter 4 to Display User Log
                         5. Enter 5 to Display User Late Payment Log
-                        4. Enter 4 to Exit 
+                        6. Enter 6 to Exit 
         ''')
         if user_input == "1":
             self.Display_Data()
